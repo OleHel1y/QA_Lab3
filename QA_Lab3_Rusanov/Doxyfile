@@ -1,0 +1,35 @@
+# Конфигурация Doxygen для QA_Lab3_Rusanov
+PROJECT_NAME           = "VK Музыка"
+PROJECT_BRIEF          = "Лабораторная работа №3 — документирование проекта"
+PROJECT_LOGO           = images/logo_small.png
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Russian
+INPUT_ENCODING         = UTF-8
+
+INPUT                  = README.md src
+FILE_PATTERNS          = *.py
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+IMAGE_PATH             = images
+
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+USE_MATHJAX            = YES
+
+# Графы (нужен установленный Graphviz)
+HAVE_DOT               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+UML_LOOK               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
